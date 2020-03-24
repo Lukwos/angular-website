@@ -1,0 +1,42 @@
+// variables
+$mobile-width: 620px;
+
+// colors
+$dark-color: hsl(0, 0%, 10%);
+$middle-color: hsl(0, 0%, 40%);
+$light-color: hsl(0, 0%, 90%);
+$primary-color: hsl(181, 90%, 50%);
+$primary-light-color: lighten($primary-color, 20%);
+$secondary-color: hsl(310, 90%, 50%);
+$secondary-light-color: lighten($secondary-color, 20%);
+
+// menu
+$menu-color: rgba(
+  $color: $dark-color,
+  $alpha: 0.8,
+);
+
+$menu-hover-color: rgba(
+  $color: $secondary-color,
+  $alpha: 0.8,
+);
+
+$menu-active-color: rgba(
+  $color: $secondary-light-color,
+  $alpha: 0.8,
+);
+
+// content
+$background-color: rgba(
+  $color: $dark-color,
+  $alpha: 0.8,
+);
+
+$title-color: $primary-color;
+
+// fonts
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+$main-font: "Fira Sans", sans-serif;
+$title-font: "Gruppo", cursive;

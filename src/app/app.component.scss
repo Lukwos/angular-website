@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  #content {
+    position: static;
+    margin: 20px 100px;
+    @media screen and (max-width: $mobile-width) {
+      margin: 20px 0;
+    }
+  }
+}

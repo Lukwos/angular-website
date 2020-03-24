@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  color: $light-color;
+}
+
+a {
+  color: $light-color;
+  text-decoration: none;
+}
+
+section {
+  background-color: $background-color;
+  padding: 10px 20px;
+  h2 {
+    font-size: 30px;
+    font-family: $title-font;
+    color: $title-color;
+    border-bottom: 1px solid $light-color;
+    padding-bottom: 10px;
+  }
+  .content {
+    margin-bottom: 100px;
+  }
+  a {
+    text-decoration: underline;
+    color: $secondary-color;
+    &:active,
+    &:hover {
+      color: $secondary-light-color;
+    }
+  }
+}

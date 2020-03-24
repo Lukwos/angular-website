@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 0;
+    background-color: $menu-color;
+    border-bottom: 1px solid $light-color;
+
+    &:hover {
+      background-color: $menu-hover-color;
+    }
+    &:active {
+      background-color: $menu-active-color;
+    }
+  }
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
